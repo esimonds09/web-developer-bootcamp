@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .grid-container {
+        background-color: #f0f1ec;
+        display: grid;
+        width: 748px;
+        /* grid-template-columns: 320px 428px; */
+        grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+        /* grid-template-rows: 414px 285px 20px; */
+        grid-template-rows: 414px 9px 130px 9px 155px 9px 20px;
+        margin: auto;
+      }
+      /* .red {
+        background-color: #e72f24;
+        grid-column: span 1;
+        border-bottom: 9px solid #000;
+        border-right: 9px solid #000;
+      } */
+      .red {
+        background-color: #e72f24;
+        grid-column: span 1;
+      }
+      .blue {
+        background-color: #004592;
+        grid-column-start: 7;
+        grid-row-start: 3;
+        border-bottom: 19px solid black;
+      }
+      .grid-line-1 {
+        background-color: #000;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 8;
+      }
+      .grid-line-2 {
+        background-color: #000;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 2;
+      }
+      .grid-line-3 {
+        background-color: #000;
+        grid-column-start: 6;
+        grid-row-start: 2;
+        grid-row-end: 8;
+      }
+      .grid-line-4 {
+        background-color: #000;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 6;
+      }
+      .grid-line-5 {
+        background-color: #000;
+        grid-column-start: 4;
+        grid-row-start: 6;
+        grid-row-end: 8;
+      }
+      .yellow {
+        background-color: #f9d01e;
+        grid-row-start: 7;
+        grid-column-start: 3;
+        /* grid-row-end: 8; */
+      }
+      .black {
+        background-color: #232629;
+        grid-row-start: 7;
+        grid-column-start: 5;
+        /* grid-row-end: 7; */
+      }
+      /* .white-one {
+        grid-column-start: 2;
+        border-bottom: 10px solid #000;
+      }
+      .white-two {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        border-bottom: 9px solid #000;
+        border-right: 9px solid #000;
+      }
+      .white-three {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        border-right: 9px solid #000;
+      }
+      .inner-grid {
+        display: grid;
+        grid-template-columns: 207px 171px 50px;
+        grid-template-rows: 130px 146px 29px;
+      }
+      .blue {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        background-color: #004592;
+        border-bottom: 19px solid #000;
+      }
+      .yellow {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        background-color: #f9d01e;
+        border-top: 9px solid #000;
+      }
+      .black {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        background-color: #232629;
+        border-left: 9px solid #000;
+        border-top: 9px solid #000;
+        border-right: 9px solid #000;
+      }
+      .inner-white {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+        border-right: 10px solid #000;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <!-- <div class="grid-container">
+      <div class="grid-item red"></div>
+      <div class="grid-item white-one"></div>
+      <div class="grid-item white-two"></div>
+      <div class="grid-item white-three"></div>
+      <div class="grid-item inner-grid">
+        <div class="grid-item black"></div>
+        <div class="grid-item blue"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item inner-white"></div>
+      </div>
+    </div> -->
+    <div class="grid-container">
+      <div class="red"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="black"></div>
+
+      <div class="grid-line-1"></div>
+      <div class="grid-line-2"></div>
+      <div class="grid-line-3"></div>
+      <div class="grid-line-4"></div>
+      <div class="grid-line-5"></div>
+    </div>
+  </body>
+</html>

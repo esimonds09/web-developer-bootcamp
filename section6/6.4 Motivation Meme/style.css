@@ -1,0 +1,21 @@
+html {
+  background-color: black;
+}
+.poster-box {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+  color: white;
+}
+#poster-img {
+  border: 5px solid white;
+  width: 100%;
+}
+#poster-hd {
+  color: white;
+  font-size: 3rem;
+}
+#poster-motto {
+  color: white;
+}
